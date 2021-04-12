@@ -1,0 +1,40 @@
+.bx-viewport {
+    overflow: visible !important;
+}
+
+.bx-wrapper {
+    border: 0 !important;
+    box-shadow: none !important;
+    max-width: 635px !important;
+    overflow: hidden;
+    background: transparent !important;
+    margin-bottom: 0 !important;
+}
+
+.bxslider__item {
+    cursor: pointer;
+}
+
+.last-works h2 {
+    margin-bottom: 84px;
+    background: transparent !important;
+}
+
+.bx-wrapper .bx-controls-direction a {
+    display: none !important;
+}
+
+.controls {
+    display: flex;
+    margin-left: 200px;
+    margin-top: 32px;
+}
+
+.controls a {
+    display: block !important;
+}
+
+.controls a:nth-of-type(1) {
+    margin-right: 66px;
+}
+
