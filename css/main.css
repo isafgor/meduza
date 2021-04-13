@@ -24,6 +24,10 @@ img {
     pointer-events: none
 }
 
+a {
+    text-decoration: none;
+}
+
 h2 {
     font-family: Jura;
     font-style: normal;
@@ -44,6 +48,39 @@ p {
     color: #F4E7DD;
 }
 
+input {
+    outline: none;
+    border: 0;
+    color: #B8B8B8;
+    background: transparent;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 155.19%;
+    transition: 0.5s;
+    border-bottom: 2px solid #5A5A5A;
+    padding: 8px 0;
+    margin-bottom: 31px;
+    width: 100%;
+    /* or 28px */
+    /*text-transform: uppercase;*/
+}
+
+textarea {
+    outline: none;
+    color: #B8B8B8;
+    width: 100%;
+    background: transparent;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 155.19%;
+    transition: 0.5s;
+    border: 2px solid #5A5A5A;
+    padding: 8px 12px;
+    resize: none;
+    height: 103px;
+    margin-bottom: 31px
+}
+
 .container {
     max-width: 1174px;
     margin: auto;
@@ -58,7 +95,6 @@ p {
     background-image: linear-gradient(#121215, #121215), linear-gradient(284.05deg, #A77086 32.41%, #6983D9 56.14%, #7672A1 74.02%, #CD9288 95.77%);
     background-origin: border-box;
     background-clip: content-box, border-box;
-    z-index: 111;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -169,6 +205,10 @@ p {
     margin-right: 38px;
 }
 
+.feedback__image {
+    margin-top: -200px;
+}
+
 .flex-wrap {
     display: flex;
     align-items: flex-start;
@@ -266,4 +306,90 @@ p {
     position: absolute;
     bottom: 0;
     right: 300px;
+}
+
+
+.send-modal__mask {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+    opacity: 0
+}
+
+.send-modal__window {
+    background: #121215;
+    /*border: 1px solid #B8B8B8;*/
+    width: 626px;
+    min-height: 474px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative
+}
+
+.send-modal__window div {
+    margin: 85px 0;
+    text-align: center;
+    max-width: 60%
+}
+
+.send-modal__window div p {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 120%;
+    /* or 22px */
+    text-align: center;
+    color: #7A7A7A;
+    margin-bottom: 33px
+}
+
+.send-modal__window h3 {
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 110%;
+    /* or 31px */
+    text-align: center;
+    color: #B8B8B8;
+    margin-top: 0;
+}
+
+.send-modal__window .button {
+    font-weight: 600;
+    font-size: 18px;
+    padding: 0;
+    /*margin-top: 22px;*/
+    cursor: pointer;
+    text-transform: uppercase;
+    margin: auto;
+}
+
+.send-modal__window div img {
+    margin-bottom: 20px
+}
+
+.send-modal__window .button {
+    width: 100%
+}
+
+.send-modal__cross {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: #121215;
+    width: 75px;
+    height: 75px;
+    /*border: 1px solid #B8B8B8;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*border-radius: 50%;*/
+    cursor: pointer
 }
