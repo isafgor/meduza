@@ -34,8 +34,8 @@ $('.mb-slider').bxSlider({
     controls: true,
     maxSlides: 1,
     minSlides: 1,
-    nextSelector: '.bx-next',
-    prevSelector: '.bx-prev',
+    nextSelector: '.bxx-next',
+    prevSelector: '.bxx-prev',
     slideWidth: 300,
     slideMargin: 100,
 });

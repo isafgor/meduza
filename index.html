@@ -12,7 +12,7 @@
     />
     <link rel="stylesheet" href="css/main.css"/>
     <link rel="stylesheet" href="css/adaptive.css"/>
-    <link rel="stylesheet" href="css/slider.css"/>
+    <link rel="stylesheet" href="css/slider.css?455554"/>
     <link rel="stylesheet" href="css/jquery.bxslider.css">
 </head>
 <body>
@@ -202,9 +202,13 @@
                                 <p>Вячеслав Гамидуллин, руководитель отдела продаж ООО "МВП"</p>
                             </div>
                         </div>
-                        <nav class='controls'>
+                        <nav class='controls mobile-hidden'>
                             <div id='prev' class='bx-prev'></div>
                             <div id='next' class='bx-next'></div>
+                        </nav>
+                        <nav class='controls desktop-hidden'>
+                            <div id='prev-2' class='bxx-prev'></div>
+                            <div id='next-2' class='bxx-next'></div>
                         </nav>
                         <a class="button" href="https://thesaftech.com#last-works">Посмотрите наши работы</a>
                     </div>
@@ -225,7 +229,11 @@
                     <br>
                     и достичь ваших целей.
                 </p>
-                <div class="button" onclick="displayModal('modal2', 'flex')">
+                <div class="button mobile-hidden" onclick="displayModal('modal2', 'flex')">
+                    <span>С нетерпением ждем Вашей заявки</span>
+                    <img src="img/Arrow.png" alt="">
+                </div>
+                <div class="button desktop-hidden" onclick="displayModal('modal2', 'flex')">
                     Написать
                 </div>
             </div>
@@ -348,9 +356,9 @@
 
 
 <script src="js/jquery.min.js"></script>
-<script src="js/jquery.bxslider.js?799865"></script>
-<script src="js/slider.js?n=799865"></script>
-<script src="js/contact.js?n=789865"></script>
+<script src="js/jquery.bxslider.js?455554"></script>
+<script src="js/slider.js?455554"></script>
+<script src="js/contact.js?455554"></script>
 
 <script src="js/main.js"></script>
 </body>
