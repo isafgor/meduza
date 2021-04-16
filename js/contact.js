@@ -50,7 +50,6 @@ $(document).ready(function(){
                 // $('#tel-desktop').val('');
                 $('#email-desktop').val('');
                 $('#message-desktop').val('');
-                displayModal('modal2','none')
                 displayModal('modal','flex');
             },
             error:function(){

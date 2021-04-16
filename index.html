@@ -11,6 +11,7 @@
         корпоративных сайтов и других информационных проектов.'
     />
     <link rel="stylesheet" href="css/main.css"/>
+    <link rel="stylesheet" href="css/adaptive.css"/>
     <link rel="stylesheet" href="css/slider.css"/>
     <link rel="stylesheet" href="css/jquery.bxslider.css">
 </head>
@@ -20,10 +21,10 @@
         <img class="header__back" src="img/background-1.png" alt="">
         <div class="container">
             <nav class="nav">
-                <a href="https://thesaftech.com">
+                <a class="header__logo" href="https://thesaftech.com">
                     <img src="img/logo.svg" alt="">
                 </a>
-                <div class="nav__links">
+                <div class="nav__links mobile-hidden">
                     <a href="#about">
                         О нас
                     </a>
@@ -34,16 +35,40 @@
                         Контакты
                     </a>
                 </div>
+                <div id="burger" class="header__burger desktop-hidden" onclick="burgerMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </nav>
+            <div id="burger-mask" class="burger-mask desktop-hidden">
+                <div class="burger-menu">
+                    <div class="burger-menu__content">
+                        <div class="burger-menu__item">
+                            <a href="#about" onclick="burgerMenu()">
+                                О нас
+                            </a>
+                            <br>
+                            <a href="#feedback" onclick="burgerMenu()">
+                                Отзывы
+                            </a>
+                            <br>
+                            <a href="#contacts" onclick="burgerMenu()">
+                                Контакты
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="header__description">
                 <p>
-                    Создаём лендинги.
+                    Создаём лендинги
                     <br>
                     Мы понимаем ваши потребности
                     <br>
                     и дизайнерские решения,
                     <br>
-                    которые работают.
+                    которые работают
                 </p>
                 <div class="button" onclick="displayModal('modal2', 'flex')">Хочу сайт</div>
             </div>
@@ -93,7 +118,49 @@
                 <h2>Отзывы</h2>
                 <div class="flex-wrap">
                     <div class="feedback__content">
-                        <div class="slider">
+                        <div class="slider mobile-hidden">
+                            <div class="bxslider__item">
+                                <p>
+                                    Компания “Saftech” занималась созданием сайта для нашей пивоварни.
+                                    Сайт получился отличным: команда учла все наши пожелания,
+                                    также предлагала свои варианты по дизайну и по расположению
+                                    информационных блоков, многие из них мы добавили на сайт.
+                                    На данный момент мы продолжаем сотрудничество и очень
+                                    благодарны команде “Saftech” за проделанную работу.
+                                </p>
+                                <br>
+                                <p>Наталья, представитель ООО "Энергия"</p>
+                            </div>
+                            <div class="bxslider__item">
+                                <p>
+                                    Сайт выше всяких похвал!
+                                    Я вообще никогда не думала, что у меня будет сайт,
+                                    но спасибо ребятам, теперь это реальность!
+                                    Были учтены все мои пожелания, подобраны шрифты, фон,
+                                    цветовая гамма. Индивидуальный подход и
+                                    клиентоориентированность - подстраивались под мою
+                                    специфику. Учитывая, что я ноль в плане сайтов, я
+                                    просто доверилась и получила шикарный результат!
+                                    Огромное спасибо! Вы крутые!!!
+                                </p>
+                                <br>
+                                <p>Галина Польщикова, астролог</p>
+                            </div>
+                            <div class="bxslider__item">
+                                <p>
+                                    Недавно заказали сайт у ООО "Сафтек". Результат
+                                    очень порадовал. Команда профессионально подошла к
+                                    вопросу и выполнила все требования, предлагая
+                                    и свои решения в некоторых местах. Мы наконец
+                                    получили современный дизайн, на который приятно
+                                    смотреть! Техническая часть реализована отлично!
+                                    Продолжаем работать.
+                                </p>
+                                <br>
+                                <p>Вячеслав Гамидуллин, руководитель отдела продаж ООО "МВП"</p>
+                            </div>
+                        </div>
+                        <div class="mb-slider desktop-hidden">
                             <div class="bxslider__item">
                                 <p>
                                     Компания “Saftech” занималась созданием сайта для нашей пивоварни.
@@ -141,7 +208,7 @@
                         </nav>
                         <a class="button" href="https://thesaftech.com#last-works">Посмотрите наши работы</a>
                     </div>
-                    <img class="feedback__image" src="img/feedback.png" alt="">
+                    <img class="feedback__image mobile-hidden" src="img/feedback.png" alt="">
                 </div>
             </div>
         </div>
@@ -149,6 +216,7 @@
     <footer id="contacts" class="footer">
         <img class="back" src="img/background-4.png" alt="">
         <div class="container">
+            <h2>Свяжитесь с нами</h2>
             <div class="footer__quest">
                 <p>
                     Мы готовы помочь вам задать новые
@@ -158,11 +226,10 @@
                     и достичь ваших целей.
                 </p>
                 <div class="button" onclick="displayModal('modal2', 'flex')">
-                    <span>С нетерпением ждем Вашей заявки</span>
-                    <img src="img/Arrow.png" alt="">
+                    Написать
                 </div>
             </div>
-            <div class="footer__info">
+            <div class="footer__info mobile-hidden">
                 <a href="https://thesaftech.com">
                     <img src="img/logo.svg" alt="">
                 </a>
@@ -177,10 +244,43 @@
                     </div>
                 </div>
             </div>
-            <div class="footer__copyright">
+            <div class="footer__copyright mobile-hidden">
                 <small>© 2021 ООО «Сафтек»  Все права защищены.</small>
                 <div>
                     <a href="https://thesaftech.com/policy">Политика конфиденциальности</a>
+                    <a href="https://thesaftech.com/offer">Договор оферты</a>
+                </div>
+            </div>
+            <div class="footer__mobile desktop-hidden">
+                <p>
+                    +79600411322
+                    <br>
+                    contact@thesaftech.com
+                    <br>
+                    ОГРН 1191690101932
+                </p>
+                <div class="footer__social">
+                    <a href="https://www.instagram.com/thesaftech/">
+                        <img src="img/inst.svg" alt="">
+                    </a>
+                    <a href="https://wa.me/79600411322">
+                        <img src="img/whatsapp.svg" alt="">
+                    </a>
+                    <a href="https://teleg.run/isafgor">
+                        <img src="img/telegram.svg" alt="">
+                    </a>
+                </div>
+                <a class="logo" href="https://thesaftech.com">
+                    <img src="img/logo.svg" alt="">
+                </a>
+                <p>
+                    © 2021 ООО "Сафтек"
+                    <br>
+                    Все права защищены.
+                </p>
+                <div class="footer__copyright">
+                    <a href="https://thesaftech.com/policy">Политика конфиденциальности</a>
+                    <br>
                     <a href="https://thesaftech.com/offer">Договор оферты</a>
                 </div>
             </div>
@@ -225,7 +325,7 @@
                     <textarea id="message-modal" class="contacts__typing contacts__textarea" name="message"
                               placeholder="Несколько слов о проекте" required></textarea>
                 </form>
-                <button type="button" id="modal-send" class="button">Отправить</button>
+                <button type="button" onclick="displayModal('modal2','none');" id="modal-send" class="button">Отправить</button>
             </div>
         </div>
     </div>
@@ -250,7 +350,7 @@
 <script src="js/jquery.min.js"></script>
 <script src="js/jquery.bxslider.js?799865"></script>
 <script src="js/slider.js?n=799865"></script>
-<script src="js/contact.js?n=799865"></script>
+<script src="js/contact.js?n=789865"></script>
 
 <script src="js/main.js"></script>
 </body>
