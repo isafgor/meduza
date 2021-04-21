@@ -4,7 +4,7 @@
 *:before,
 *:after {
     box-sizing: border-box;
-    color: #B8B8B8;
+    color: #333333;
     font-family: Jura;
 }
 
@@ -16,7 +16,7 @@ html {
 
 body {
     width: 100%;
-    background: #121215;
+    background: #FFD1DC;
     overflow-y: scroll
 }
 
@@ -35,7 +35,7 @@ h2 {
     font-size: 60px;
     line-height: 122%;
     /* or 73px */
-    color: #F4E7DD;
+    color: #333333;
 }
 
 p {
@@ -45,13 +45,13 @@ p {
     font-size: 31px;
     line-height: 122%;
     /* or 38px */
-    color: #F4E7DD;
+    color: #333333;
 }
 
 input {
     outline: none;
     border: 0;
-    color: #B8B8B8;
+    color: #333333;
     background: transparent;
     font-weight: normal;
     font-size: 18px;
@@ -67,7 +67,7 @@ input {
 
 textarea {
     outline: none;
-    color: #B8B8B8;
+    color: #333333;
     width: 100%;
     background: transparent;
     font-weight: normal;
@@ -91,16 +91,13 @@ textarea {
     width: 361px;
     height: 54px;
     cursor: pointer;
-    border: solid 2px transparent;
-    background-image: linear-gradient(#121215, #121215), linear-gradient(284.05deg, #A77086 32.41%, #6983D9 56.14%, #7672A1 74.02%, #CD9288 95.77%);
-    background-origin: border-box;
-    background-clip: content-box, border-box;
+    border: 2px solid #333333;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-weight: 600;
     font-size: 20px;
-    color: #F4E7DD;
+    color: #333333;
+    font-weight: bold;
 }
 
 .header {
@@ -110,34 +107,36 @@ textarea {
     display: flex;
     flex-direction: column;
     width: 100%;
+    position: relative;
 
+}
+
+.header .container {
+    z-index: 1;
 }
 
 .header__back {
     position: absolute;
     top: 0;
     right: 0;
+    width: 100%;
+    height: 100%;
 }
 
 .header__description {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 160px;
 }
 
 .header__description p {
-    background: linear-gradient(284.05deg, #A77086 32.41%, #6983D9 56.14%, #7672A1 74.02%, #CD9288 95.77%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    margin-top: 120px;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 54px;
+    font-weight: normal;
+    font-size: 40px;
     line-height: 118%;
     /* or 64px */
-    text-align: center;
     margin-bottom: 58px;
+    color: #333333;
 }
 
 .nav {
@@ -154,7 +153,7 @@ textarea {
     line-height: 138%;
     /* identical to box height, or 25px */
     text-align: center;
-    color: #F4E7DD;
+    color: #333;
     text-transform: uppercase;
     text-decoration: none;
 }
@@ -167,26 +166,56 @@ textarea {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
-.main__description .back {
+.main__description p {
+    z-index: 1;
+    line-height: 122%;
+}
+
+.main__description .container img {
+    top: 187px;
+    left: -77px;
+}
+
+.main__description img {
     position: absolute;
-    top: 585px;
-    left: 0;
+}
+
+.main__description .circles img:nth-of-type(1) {
+    top: 1035px;
+    right: 0;
+}
+
+.main__description .circles img:nth-of-type(2) {
+    top: 840px;
+    right: 26px;
 }
 
 .main__progress {
     margin-top: 233px;
 }
 
-.main__progress img {
-    margin-top: 80px;
+.main__progress .progress-text {
+    display: flex;
+    align-items: flex-start;
 }
 
-.main__progress .back {
-    position: absolute;
-    top: 1504px;
-    right: 0;
+.main__progress .progress-text div {
+    margin-right: 72px;
+}
+
+.main__progress h3 {
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 117%;
+}
+
+.main__progress p {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 122%;
 }
 
 .main__progress .button {
@@ -195,6 +224,25 @@ textarea {
 
 .main__feedback {
     margin-top: 316px;
+}
+
+.main__feedback .flex-wrap {
+    position: relative;
+}
+
+.main__feedback .circles img {
+    position: absolute;
+}
+
+.main__feedback .flex-wrap img:nth-of-type(1) {
+    right: 0;
+    top: 200px;
+    z-index: 1;
+}
+
+.main__feedback .flex-wrap img:nth-of-type(2) {
+    right: -100px;
+    top: 356px;
 }
 
 .feedback__content .button {
@@ -255,7 +303,8 @@ textarea {
 
 .footer__info a {
     display: block;
-    color: #F4E7DD;
+    color: #333;
+    font-weight: normal;
 }
 
 .footer__social {
@@ -266,6 +315,7 @@ textarea {
     margin-bottom: 10px;
     text-decoration: none;
     border-bottom: 1px solid;
+    font-weight: normal;
 }
 
 .footer__copyright {
@@ -281,7 +331,8 @@ textarea {
     line-height: 143.7%;
     /* or 23px */
     letter-spacing: -0.02em;
-    color: #F4E7DD;
+    color: #333;
+    font-weight: normal;
 }
 
 .footer__copyright div {
@@ -295,7 +346,8 @@ textarea {
     margin-bottom: 10px;
     text-decoration: none;
     border-bottom: 1px transparent;
-    color: #F4E7DD;
+    color: #333;
+    font-weight: normal;
 }
 
 .footer__copyright a:hover {
