@@ -376,7 +376,7 @@ textarea {
 }
 
 .send-modal__window {
-    background: #121215;
+    background: #FFD1DC;
     /*border: 1px solid #B8B8B8;*/
     width: 626px;
     min-height: 474px;
@@ -409,7 +409,7 @@ textarea {
     line-height: 110%;
     /* or 31px */
     text-align: center;
-    color: #B8B8B8;
+    color: #333333;
     margin-top: 0;
 }
 
@@ -421,6 +421,7 @@ textarea {
     cursor: pointer;
     text-transform: uppercase;
     margin: auto;
+    background: transparent;
 }
 
 .send-modal__window div img {
@@ -435,7 +436,7 @@ textarea {
     position: absolute;
     right: 0;
     top: 0;
-    background: #121215;
+    background: #FFD1DC;
     width: 75px;
     height: 75px;
     /*border: 1px solid #B8B8B8;*/
