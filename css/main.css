@@ -194,7 +194,10 @@ textarea {
 }
 
 .main__progress {
-    margin-top: 233px;
+    padding-top: 233px;
+    background: -webkit-linear-gradient(180deg, rgb(255, 209, 220), rgb(249, 238, 195) 36%);
+    background: -moz-linear-gradient(180deg, rgb(255, 209, 220), rgb(249, 238, 195) 36%);
+    background: linear-gradient(180deg, rgb(255, 209, 220), rgb(249, 238, 195) 36%);
 }
 
 .main__progress .progress-text {
@@ -223,7 +226,16 @@ textarea {
 }
 
 .main__feedback {
-    margin-top: 316px;
+    background: -webkit-linear-gradient(180deg, rgb(249, 238, 195), rgb(255, 255, 255) 29%);
+    background: -moz-linear-gradient(180deg, rgb(249, 238, 195), rgb(255, 255, 255) 29%);
+    background: linear-gradient(180deg, rgb(249, 238, 195), rgb(255, 255, 255) 29%);
+    padding-bottom: 109px;
+    padding-top: 255px;
+}
+
+.main__feedback h2 {
+    margin-top: 0;
+    padding-top: 30px;
 }
 
 .main__feedback .flex-wrap {
@@ -264,7 +276,7 @@ textarea {
 }
 
 .footer {
-    margin-top: 410px;
+    margin-top: 184px;
     position: relative;
     padding-bottom: 72px;
 }
