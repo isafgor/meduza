@@ -1,11 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Jura:wght@400;500;600;700&display=swap');
-
 *,
 *:before,
 *:after {
     box-sizing: border-box;
     color: #333333;
-    font-family: Jura;
+    font-family: Proxima Nova;
 }
 
 body,
@@ -29,7 +27,7 @@ a {
 }
 
 h2 {
-    font-family: Jura;
+    font-family: Proxima Nova;
     font-style: normal;
     font-weight: bold;
     font-size: 60px;
@@ -39,7 +37,7 @@ h2 {
 }
 
 p {
-    font-family: Jura;
+    font-family: Proxima Nova;
     font-style: normal;
     font-weight: 500;
     font-size: 31px;
@@ -146,7 +144,7 @@ textarea {
 
 .nav__links a {
     margin-left: 32px;
-    font-family: Jura;
+    font-family: Proxima Nova;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
@@ -154,7 +152,6 @@ textarea {
     /* identical to box height, or 25px */
     text-align: center;
     color: #333;
-    text-transform: uppercase;
     text-decoration: none;
 }
 

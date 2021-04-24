@@ -28,7 +28,7 @@
     }
 
     img {
-        max-width: 400px;
+        max-width: 100%;
     }
 
     .container {
@@ -47,6 +47,17 @@
         height: 318px;
     }
 
+    .header__description {
+        display: flex;
+        flex-direction: column;
+        margin-top: 85px;
+    }
+
+    .header__description div {
+        order: 1;
+        width: 100%;
+    }
+
     .header__description br {
         display: block;
     }
@@ -56,7 +67,7 @@
     }
 
     .nav {
-        border-bottom: 1px solid #EEEEEE;
+        border-bottom: 1px solid #333333;
         padding: 30px 0;
         position: relative;
         z-index: 9999;
@@ -159,7 +170,7 @@
         display: block;
         content: '';
         border: 0;
-        background-color: #EEEEEE;
+        background-color: #333333;
         margin-bottom: 6.5px;
     }
 
@@ -185,10 +196,15 @@
     }
 
     .header__description p {
-        font-weight: bold;
+        font-weight: normal;
         font-size: 24px;
         line-height: 151%;
         text-align: left;
+    }
+
+    .main {
+        overflow: hidden;
+        position: relative;
     }
 
     .main__description .container {
@@ -196,22 +212,23 @@
         align-items: flex-start;
     }
 
-    .main__description .container p {
-        order: 1;
+    .main__description .circles img:nth-of-type(1) {
+        top: 80px;
+        right: -35px;
+        max-width: 97px !important;
+        width: 97px !important;
     }
 
-    .main__description .container img {
-        width: 100%;
-    }
-
-    .main__description .back {
-        width: 292px;
-        top: 978px;
+    .main__description .circles img:nth-of-type(2) {
+        top: 90px;
+        right: 50px;
+        width: 116px;
     }
 
 
     .main__progress {
-        margin-top: 125px;
+        margin-top: 173px;
+        padding-top: 0;
     }
 
     .main__progress .container {
@@ -225,17 +242,32 @@
     }
 
     .main__progress .container h2 {
-        order: 1;
-        margin-bottom: 0;
+        margin-bottom: 51px;
     }
 
-    .main__progress .container p {
-        order: 2;
+    .main__progress .progress-text {
+        flex-direction: column;
     }
 
-    .main__progress .container .button {
-        order: 3;
-        margin-top: 31px;
+    .main__progress .progress-text div {
+        margin-right: 0;
+    }
+
+    .main__progress .button {
+        margin-top: 45px;
+    }
+
+
+    .main__progress h3 {
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 117%;
+    }
+
+    .main__progress p {
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 136%;
     }
 
     .main__progress .back {
@@ -244,7 +276,10 @@
 
 
     .main__feedback {
-        margin-top: 125px;
+        padding-top: 113px;
+        background: -webkit-linear-gradient(180deg, rgb(249, 238, 195), rgb(255, 255, 255) 100%);
+        background: -moz-linear-gradient(180deg, rgb(249, 238, 195), rgb(255, 255, 255) 100%);
+        background: linear-gradient(180deg, rgb(249, 238, 195), rgb(255, 255, 255) 100%);
     }
 
     .main__feedback .container {
@@ -275,7 +310,7 @@
     .footer__quest {
         flex-direction: column;
         padding-bottom: 28px;
-        border-bottom: 1px solid #383838;
+        border-bottom: 1px solid #333333;
     }
 
     .footer__quest .button {
@@ -296,7 +331,7 @@
         font-size: 16px;
         line-height: 2;
         /* or 19px */
-        color: #C4C4C4;
+        color: #333333;
     }
 
     .footer__social {
@@ -325,7 +360,7 @@
         font-weight: normal;
         font-size: 16px;
         line-height: 1.7;
-        color: #C4C4C4 !important;
+        color: #333333 !important;
         border-bottom: 1px solid;
     }
 
