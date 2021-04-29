@@ -14,12 +14,13 @@
     <link rel="stylesheet" href="css/adaptive.css"/>
     <link rel="stylesheet" href="css/slider.css?455554"/>
     <link rel="stylesheet" href="css/jquery.bxslider.css">
-    <link rel="stylesheet" href="css/fonts.css?n=455554"/>
 </head>
 <body>
 <div id="app">
     <header class="header">
-        <img class="header__back mobile-hidden" src="img/background-1.png" alt="">
+        <div class="header__back mobile-hidden">
+            <img src="img/background-1.png" alt="">
+        </div>
         <div class="container">
             <nav class="nav">
                 <a class="header__logo" href="https://thesaftech.com">
@@ -35,6 +36,7 @@
                     <a href="#contacts">
                         Контакты
                     </a>
+                    <img src="img/header-line.svg" alt="">
                 </div>
                 <div id="burger" class="header__burger desktop-hidden" onclick="burgerMenu()">
                     <span></span>
@@ -70,13 +72,15 @@
                         <br>
                         в реальности 21 века
                         <br>
-                        Помогаем Вашему
+                        Помогаем Вашему бренду
                         <br>
-                        бренду сиять
+                        сиять
                     </p>
-                    <div class="button" onclick="displayModal('modal2', 'flex')">Хочу сайт</div>
+                    <div class="button" onclick="displayModal('modal2', 'flex')">
+                        <span>Хочу сайт</span>
+                        <span>Хочу сайт</span>
+                    </div>
                 </div>
-                <img src="img/comp.png" alt="">
             </div>
         </div>
     </header>
@@ -86,17 +90,14 @@
                 <p>
                     Понимаем коммерческую роль дизайна
                     <br>
-                    и пригодность маркетинговых
+                    и пригодность маркетинговых инструментов.
                     <br>
-                    инструментов. Создаём
+                     Создаём функциональный и красивый дизайн
                     <br>
-                    функциональный и красивый дизайн
+                    для ваших самых нестандартных творческих
                     <br>
-                    для ваших самых нестандартных
-                    <br>
-                    творческих и бизнес потребностей.
+                    и бизнес потребностей.
                 </p>
-                <img class="mobile-hidden" src="img/worm.png" alt="">
             </div>
             <div class="circles">
                 <img src="img/circle-1.png" alt="">
@@ -105,47 +106,34 @@
         </div>
         <div class="main__progress">
             <div class="container">
-                <h2>Достигаем результатов</h2>
+                <img src="img/results.png" alt="" width="531">
                 <div class="progress-text">
-                    <div>
-                        <h3>
-                            Нет фиксированного, специфичного
-                            <br>
-                            стиля дизайна.
-                        </h3>
-                        <p>
-                            Каждый бренд должен быть уникальным, поэтому каждый
-                            <br>
-                            наш проект включает уникальную графическую составляющую.
-                            <br>
-                            Адаптируем это к потребностям направления бизнеса.
-                            <br>
-                            Сохраняем гибкость, чтобы гарантировать, что вы получите
-                            <br>
-                            что-то, что соответствует заданию и рынку.
-                        </p>
-                    </div>
-                    <div>
-                        <h3>
-                            Эмоциональная вовлеченность
-                        </h3>
-                        <p>
-                            Специализируемся на различной сложности проектах.
-                            <br>
-                            Прежде всего, нам нравится то, что мы делаем.
-                            <br>
-                            Мы эмоционально участвуем в проектах,
-                            <br>
-                            уделяя им такую же заботу и внимание, как их владелец
-                        </p>
+                    <img src="img/results.svg" alt="">
+                    <p>
+                        Каждый бренд должен быть уникальным,
+                        <br>
+                        поэтому каждый наш проект включает
+                        <br>
+                        уникальную графическую составляющую.
+                        <br>
+                        Адаптируем это к потребностям направления
+                        <br>
+                        бизнеса. Сохраняем гибкость,
+                        <br>
+                        чтобы гарантировать, что вы получите то
+                        <br>
+                        что соответствует заданию и рынку.
+                    </p>
+                    <div class="button" onclick="displayModal('modal2', 'flex')">
+                        <span>Купить лендинг</span>
+                        <span>Купить лендинг</span>
                     </div>
                 </div>
-                <div class="button" onclick="displayModal('modal2', 'flex')">Купить лендинг</div>
             </div>
         </div>
         <div id="feedback" class="main__feedback">
             <div class="container">
-                <h2>Отзывы</h2>
+                <img src="img/feedback.svg" alt="">
                 <div class="flex-wrap">
                     <div class="feedback__content">
                         <div class="slider mobile-hidden">
@@ -240,7 +228,10 @@
                             <div id='prev-2' class='bxx-prev'></div>
                             <div id='next-2' class='bxx-next'></div>
                         </nav>
-                        <a class="button" href="https://thesaftech.com#last-works">Посмотрите наши работы</a>
+                        <a class="button" href="https://thesaftech.com#last-works">
+                            <span>Посмотрите наши работы</span>
+                            <span>Посмотрите наши работы</span>
+                        </a>
                     </div>
                     <div class="circles">
                         <img class="feedback__image mobile-hidden" src="img/circle-2.png" alt="">
@@ -252,7 +243,6 @@
     </main>
     <footer id="contacts" class="footer">
         <div class="container">
-            <h2>Свяжитесь с нами</h2>
             <div class="footer__quest">
                 <p>
                     Мы готовы помочь вам задать новые
@@ -263,7 +253,7 @@
                 </p>
                 <div class="button mobile-hidden" onclick="displayModal('modal2', 'flex')">
                     <span>Ждем Вашей заявки</span>
-                    <img src="img/Arrow.png" alt="">
+                    <span>Ждем Вашей заявки</span>
                 </div>
                 <div class="button desktop-hidden" onclick="displayModal('modal2', 'flex')">
                     Написать

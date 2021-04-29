@@ -1,0 +1,18 @@
+<svg width="310" height="59" viewBox="0 0 310 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M15 58H1V44" stroke="#DC117B" stroke-width="2"/>
+<path d="M15 57H1V43" stroke="#23AFDD" stroke-width="2"/>
+<path d="M14 58H296" stroke="#AA1E81" stroke-opacity="0.22" stroke-width="2"/>
+<path d="M14 57H296" stroke="#0FCCEA" stroke-opacity="0.22" stroke-width="2"/>
+<path d="M15.5 2H296" stroke="#AA1E81" stroke-opacity="0.22" stroke-width="2"/>
+<path d="M15.5 1H296" stroke="#0FCCEA" stroke-opacity="0.22" stroke-width="2"/>
+<path d="M15 2H1V16" stroke="#DC117B" stroke-width="2"/>
+<path d="M15 1H1V15" stroke="#23AFDD" stroke-width="2"/>
+<path d="M2 45.75L2 10" stroke="#AA1E81" stroke-opacity="0.22" stroke-width="2"/>
+<path d="M1 45.75L0.999998 10" stroke="#0FCCEA" stroke-opacity="0.22" stroke-width="2"/>
+<path d="M309 45.75L309 10" stroke="#AA1E81" stroke-opacity="0.22" stroke-width="2"/>
+<path d="M308 45.75L308 10" stroke="#0FCCEA" stroke-opacity="0.22" stroke-width="2"/>
+<path d="M295 2H309V16" stroke="#DC117B" stroke-width="2"/>
+<path d="M295 1H309V15" stroke="#23AFDD" stroke-width="2"/>
+<path d="M295 58H309V44" stroke="#DC117B" stroke-width="2"/>
+<path d="M295 57H309V43" stroke="#23AFDD" stroke-width="2"/>
+</svg>
