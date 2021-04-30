@@ -67,7 +67,7 @@
     }
 
     .nav {
-        border-bottom: 1px solid #333333;
+        border-bottom: 1px solid #23AFDD;
         padding: 30px 0;
         position: relative;
         z-index: 9999;
@@ -115,7 +115,7 @@
     }
 
     .burger-menu__item a {
-        color: #EEEEEE;
+        color: #23AFDD;
         font-style: normal;
         font-weight: 500;
         font-size: 16px;
@@ -130,7 +130,7 @@
     }
 
     .burger-menu__flag--active {
-        border: 1px solid #EEEEEE;
+        border: 1px solid #23AFDD;
     }
 
     .header__burger {
@@ -170,7 +170,7 @@
         display: block;
         content: '';
         border: 0;
-        background-color: #333333;
+        background-color: #23AFDD;
         margin-bottom: 6.5px;
     }
 
@@ -205,6 +205,7 @@
     .main {
         overflow: hidden;
         position: relative;
+        margin-top: 140px;
     }
 
     .main__description .container {
@@ -212,22 +213,17 @@
         align-items: flex-start;
     }
 
-    .main__description .circles img:nth-of-type(1) {
-        top: 80px;
-        right: -35px;
-        max-width: 97px !important;
-        width: 97px !important;
+    .main__description .container p {
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 145%;
+        /* or 20px */
+        color: #AFAFAF;
+        margin: 0;
     }
-
-    .main__description .circles img:nth-of-type(2) {
-        top: 90px;
-        right: 50px;
-        width: 116px;
-    }
-
 
     .main__progress {
-        margin-top: 173px;
+        margin-top: 81px;
         padding-top: 0;
     }
 
@@ -241,33 +237,41 @@
         margin-top: 0;
     }
 
+    .main__progress img:nth-of-type(2) {
+        width: 300px;
+        top: 170px;
+    }
+
+    @keyframes levitate {
+        50% {
+            top: 140px;
+        }
+        100% {
+            top: 170px;
+        }
+    }
+
     .main__progress .container h2 {
         margin-bottom: 51px;
     }
 
     .main__progress .progress-text {
-        flex-direction: column;
+        margin-left: 0;
     }
 
-    .main__progress .progress-text div {
-        margin-right: 0;
+    .main__progress .headline {
+        width: 160px !important;
     }
 
     .main__progress .button {
         margin-top: 45px;
     }
 
-
-    .main__progress h3 {
-        font-weight: bold;
-        font-size: 14px;
-        line-height: 117%;
-    }
-
     .main__progress p {
         font-weight: normal;
         font-size: 14px;
         line-height: 136%;
+        margin-top: 23px;
     }
 
     .main__progress .back {
@@ -277,17 +281,50 @@
 
     .main__feedback {
         padding-top: 113px;
-        background: -webkit-linear-gradient(180deg, rgb(249, 238, 195), rgb(255, 255, 255) 100%);
-        background: -moz-linear-gradient(180deg, rgb(249, 238, 195), rgb(255, 255, 255) 100%);
-        background: linear-gradient(180deg, rgb(249, 238, 195), rgb(255, 255, 255) 100%);
+        padding-bottom: 256px;
+    }
+
+    .main__feedback .feedback-back {
+        width: 100%;
+        bottom: 80px;
+        top: auto;
+    }
+
+    .main__feedback .headline {
+        width: 100px !important;
     }
 
     .main__feedback .container {
         overflow: hidden;
     }
 
+    .main__feedback .container p {
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 141%;
+        /* or 20px */
+        color: #AFAFAF;
+        margin-top: 30px;
+    }
+
+    .main__feedback .container .controls {
+        margin: auto;
+    }
+
     .main__feedback .feedback__content {
         max-width: 100%;
+    }
+
+    .main__feedback .feedback__content .controls {
+        justify-content: center;
+    }
+
+    .main__feedback .feedback__content .controls .bxx-prev {
+        margin-right: 35px;
+    }
+
+    .main__feedback .feedback__content .controls a:nth-of-type(1) {
+        margin-right: 0;
     }
 
     .main__feedback .feedback__content .controls {
@@ -304,13 +341,13 @@
     }
 
     .footer {
-        margin-top: 170px;
+        margin-top: 0;
     }
 
     .footer__quest {
         flex-direction: column;
         padding-bottom: 28px;
-        border-bottom: 1px solid #333333;
+        border-bottom: 1px solid #23AFDD;
     }
 
     .footer__quest .button {
@@ -331,7 +368,7 @@
         font-size: 16px;
         line-height: 2;
         /* or 19px */
-        color: #333333;
+        color: #23AFDD;
     }
 
     .footer__social {
@@ -360,7 +397,7 @@
         font-weight: normal;
         font-size: 16px;
         line-height: 1.7;
-        color: #333333 !important;
+        color: #23AFDD !important;
         border-bottom: 1px solid;
     }
 

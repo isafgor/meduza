@@ -18,8 +18,9 @@
 <body>
 <div id="app">
     <header class="header">
-        <div class="header__back mobile-hidden">
-            <img src="img/background-1.png" alt="">
+        <div class="header__back">
+            <img class="mobile-hidden" src="img/background-1.png" alt="">
+            <img class="desktop-hidden" src="img/background-3.png" alt="">
         </div>
         <div class="container">
             <nav class="nav">
@@ -105,7 +106,7 @@
                 <img src="img/results.png" alt="">
                 <img src="img/flying-car.png" alt="">
                 <div class="progress-text">
-                    <img src="img/results.svg" alt="">
+                    <img class="headline" src="img/results.svg" alt="">
                     <p>
                         Каждый бренд должен быть уникальным,
                         <br>
@@ -131,7 +132,7 @@
         <div id="feedback" class="main__feedback">
             <img class="feedback-back" src="img/background-2.png" alt="">
             <div class="container">
-                <img src="img/feedback.svg" alt="">
+                <img class="headline" src="img/feedback.svg" alt="">
                 <div class="flex-wrap">
                     <div class="feedback__content">
                         <div class="slider mobile-hidden">
@@ -250,7 +251,8 @@
                     <span>Ждем Вашей заявки</span>
                 </div>
                 <div class="button desktop-hidden" onclick="displayModal('modal2', 'flex')">
-                    Написать
+                    <span>Написать</span>
+                    <span>Написать</span>
                 </div>
             </div>
             <div class="footer__info mobile-hidden">
