@@ -160,7 +160,7 @@ textarea {
 }
 
 .header .container {
-    z-index: 1;
+    z-index: 111;
 }
 
 .header__back {
@@ -170,6 +170,63 @@ textarea {
     width: 100%;
     display: flex;
     justify-content: center;
+}
+
+.header__wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.header__back .back {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.header__back .front {
+    position: relative;
+    z-index: 2;
+}
+
+.header__back .cars-right {
+    position: absolute;
+    animation: flying-right 2s linear infinite;
+    top: 150px;
+    left: 0;
+    animation-delay: .5s;
+}
+
+.header__back .cars-left {
+    position: absolute;
+    animation: flying-left 2s linear infinite;
+    top: 230px;
+    right: 0;
+}
+
+.header__back .cars-left-faster {
+    position: absolute;
+    animation: flying-left 1.7s linear infinite;
+    top: 180px;
+    right: 0;
+    animation-delay: 1.5s;
+}
+
+@keyframes flying-right {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: 1100px;
+    }
+}
+
+@keyframes flying-left {
+    0% {
+        right: 0;
+    }
+    100% {
+        right: 1100px;
+    }
 }
 
 
@@ -229,7 +286,7 @@ textarea {
 }
 
 .main__description p {
-    z-index: 1;
+    z-index: 11111;
     color: #ffffff;
 }
 
@@ -265,7 +322,7 @@ textarea {
 
 @keyframes levitate {
     50% {
-        top: 260px;
+        top: 280px;
     }
     100% {
         top: 300px;
